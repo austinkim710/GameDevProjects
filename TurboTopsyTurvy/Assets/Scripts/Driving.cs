@@ -61,11 +61,15 @@ public class Driving : MonoBehaviour {
 		{
 			backRightWheel.brakeTorque = brakeForce;
 			backLeftWheel.brakeTorque = brakeForce;
+			frontLeftWheel.brakeTorque = brakeForce;
+			frontRightWheel.brakeTorque = brakeForce;
 		}
 		else
 		{
 			backLeftWheel.brakeTorque = 0;
 			backRightWheel.brakeTorque = 0;
+			frontRightWheel.brakeTorque = 0;
+			frontLeftWheel.brakeTorque = 0;
 		}
 
 	}
